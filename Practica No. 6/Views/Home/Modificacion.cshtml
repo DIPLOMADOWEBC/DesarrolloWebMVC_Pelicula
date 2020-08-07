@@ -1,0 +1,71 @@
+﻿@model Practica_No._6.Models.Pelicula
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Modificacion</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Home/Modificacion">
+            <h1>Modificacion de Peliculas</h1>
+            <table class="auto-style1">
+                <tr>
+                    <td>Codigo</td>
+                    <td>
+                        <input type="text" value="@Model.Codigo" name="Codigo" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Titulo</td>
+                    <td>
+                        <input type="text" value="@Model.Titulo" name="Titulo" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Director</td>
+                    <td>
+                        <input type="text" value="@Model.Director" name="Director" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Autor Principal</td>
+                    <td>
+                        <input type="text" value="@Model.AutorPrincipal" name="AutorPrincipal" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. Actores</td>
+                    <td>
+                        <input type="text" value="@Model.numAutores" name="numActores" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Duracion</td>
+                    <td>
+                        <input type="text" value="@Model.Duracion" name="Duracion" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Estreno</td>
+                    <td>
+                        <input type="text" value="@Model.Estreno" name="Estreno" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"></td>
+                    <td>
+                        <input type="submit" name="Confirmar" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

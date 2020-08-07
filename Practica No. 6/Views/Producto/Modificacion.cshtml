@@ -1,0 +1,53 @@
+﻿@model Practica_No._6.Models.Producto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Modificacion</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Producto/Modificacion">
+            <h1>Modificacion de Producto</h1>
+            <table class="auto-style1">
+                <tr>
+                    <td>Id</td>
+                    <td>
+                        <input type="text" value="@Model.Id" name="Id" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Descripcion</td>
+                    <td>
+                        <input type="text" value="@Model.Descripcion" name="Descripcion" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td>
+                        <input type="text" value="@Model.Tipo" name="Tipo" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>
+                        <input type="text" value="@Model.Precio" name="Precio" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"></td>
+                    <td>
+                        <input type="submit" name="Confirmar" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
